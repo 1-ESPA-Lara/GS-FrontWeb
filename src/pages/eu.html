@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+   <header>
+    <div class="menu">
+      <a href="../../index.html">
+        <img src="../assets/logo.png" alt="Logo" class="logo">
+      </a>
+      <nav>
+        <a href="./home.html" class="menu-item " data-page="home">
+          <i data-lucide="home"></i>
+          <span>Home</span>
+        </a>
+        <a href="./perfil.html" class="menu-item" data-page="rede">
+          <i data-lucide="users"></i>
+          <span>Minha Rede</span>
+        </a>
+        <a href="./quiz.html" class="menu-item" data-page="quiz">
+          <i data-lucide="help-circle"></i>
+          <span>Quiz</span>
+        </a>
+        <a href="./eu.html" class="menu-item ativo" data-page="eu">
+          <i data-lucide="user"></i>
+          <span>Eu</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    lucide.createIcons();
+  </script>
   <script src="../js/script.js"></script>
 </body>
 </html>
