@@ -11,7 +11,7 @@
    <header>
     <div class="menu">
       <a href="../../index.html">
-        <img src="../assets/logo.png" alt="Logo" class="logo">
+        <img src="../assets/logo.jpg" alt="Logo" class="logo">
       </a>
       <nav>
         <a href="./home.html" class="menu-item" data-page="home">
@@ -34,6 +34,54 @@
     </div>
   </header>
 
+
+  <main id="container-quiz">
+  <!-- INTRODUÇÃO -->
+  <section id="quiz-intro" class="quiz-intro">
+    <div class="intro-content">
+      <h2>Prepare-se para o Quiz!</h2>
+      <p>Antes de começar, veja o que você encontrará neste desafio.</p>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <h3>Tecnologias</h3>
+          <p>As perguntas exploram HTML, CSS e JavaScript de forma divertida e educativa.</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Nível</h3>
+          <p>Conteúdo introdutório, ideal para estudantes e iniciantes no mundo web.</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Duração</h3>
+          <p>São 5 perguntas simples, sem tempo limite. Responda com calma e atenção!</p>
+        </div>
+      </div>
+
+      <button id="inicio-quiz-btn" class="btn-iniciar">Iniciar Quiz</button>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz-section" class="quiz hidden">
+    <h1>Teste seus conhecimentos!</h1>
+
+    <div id="container-perguntas" class="pergunta-box">
+      <h2 id="pergunta"></h2>
+      <ul id="opcoes" class="opcoes"></ul>
+      <input type="text" id="resposta" placeholder="Digite a letra da alternativa escolhida (a, b ou c)" />
+    </div>
+
+    <button id="proximo" class="btn-proximo">Próxima Pergunta</button>
+
+    <div id="container-resultado" class="hidden resultado-box">
+      <h2>Resultado Final</h2>
+      <p id="resultado-texto"></p>
+      <button id="inicio-btn" class="btn-reiniciar">Reiniciar Quiz</button>
+    </div>
+  </section>
+</main>
   <script>
     lucide.createIcons();
   </script>
