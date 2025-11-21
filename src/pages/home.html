@@ -1,42 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="pt-br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>InclusiON - Home</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-   <header>
-    <div class="menu">
-      <a href="../../index.html">
-        <img src="../assets/logo.jpg" alt="Logo" class="logo">
-      </a>
-      <nav>
-        <a href="./home.html" class="menu-item ativo" data-page="home">
-          <i data-lucide="home"></i>
-          <span>Home</span>
-        </a>
-        <a href="./perfil.html" class="menu-item" data-page="rede">
-          <i data-lucide="users"></i>
-          <span>Minha Rede</span>
-        </a>
-        <a href="./quiz.html" class="menu-item" data-page="quiz">
-          <i data-lucide="help-circle"></i>
-          <span>Quiz</span>
-        </a>
-        <a href="./eu.html" class="menu-item" data-page="eu">
-          <i data-lucide="user"></i>
-          <span>Eu</span>
-        </a>
-      </nav>
-    </div>
-  </header>
-
-  <script>
-    lucide.createIcons();
-  </script>
-    <script src="../js/script.js"></script>
+    <header>
+        <div class="menu">
+            <a href="/index.html">
+                <img src="../assets/logo.jpg" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <a href="./home.html" class="menu-item ativo" data-page="home">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="./perfil.html" class="menu-item" data-page="rede">
+                    <i data-lucide="users"></i>
+                    <span>Minha Rede</span>
+                </a>
+                <a href="./quiz.html" class="menu-item" data-page="quiz">
+                    <i data-lucide="help-circle"></i>
+                    <span>Quiz</span>
+                </a>
+                <a href="./eu.html" class="menu-item" data-page="eu">
+                    <i data-lucide="user"></i>
+                    <span>Eu</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        lucide.createIcons();
+    </script>
+    <main class="layout-home home-transition">
+        <aside class="left-column">
+            <section class="profile-card">
+                <div class="profile-banner"></div>
+                <img src="../assets/Perfil.avif" alt="Foto de perfil" class="profile-photo">
+                <h2 class="profile-name">Maria Antonia Silva</h2>
+                <p class="profile-role">Aluna da Fiap</p>
+                <p class="profile-location">São Paulo, Brasil</p>
+                <div class="profile-divider"></div>
+                <p class="profile-link">Ver perfil completo</p>
+            </section>
+            <section class="profile-extra-card">
+                <button class="extra-item">
+                    <span class="extra-title">Conexões</span>
+                    <span class="extra-sub">Amplie sua rede</span>
+                </button>
+                <button class="extra-item">
+                    <span class="extra-title">Vagas salvas</span>
+                    <span class="extra-sub">Revise oportunidades</span>
+                </button>
+                <button class="extra-item">
+                    <span class="extra-title">Grupos</span>
+                    <span class="extra-sub">Comunidades e apoio</span>
+                </button>
+                <button class="extra-item">
+                    <span class="extra-title">Eventos</span>
+                    <span class="extra-sub">Workshops e feiras de emprego</span>
+                </button>
+            </section>
+        </aside>
+        <section class="center-column">
+            <section class="start-post-card">
+                <img src="../assets/Perfil.avif" alt="Mini foto" class="mini-photo">
+                <input
+                    type="text"
+                    class="post-input"
+                    placeholder="Começar publicação"
+                >
+                <div class="start-actions">
+                    <button class="start-btn">Vídeo</button>
+                    <button class="start-btn">Foto</button>
+                    <button class="start-btn">Escrever artigo</button>
+                </div>
+            </section>
+            <article class="feed-post">
+                <header class="feed-header">
+                    <img src="../assets/Perfil.avif" class="feed-avatar" alt="">
+                    <div>
+                        <h3 class="feed-name">Equipe InclusiON</h3>
+                        <p class="feed-role">Plataforma para refugiados no Brasil · 1d</p>
+                    </div>
+                </header>
+                <p class="feed-text">
+                    Bem-vindo ao InclusiON 👋  
+                    Aqui você pode aprender português, entender como validar seus diplomas e encontrar
+                    vagas em empresas que valorizam diversidade e inclusão.
+                </p>
+            </article>
+            <article class="feed-post">
+                <header class="feed-header">
+                    <div class="feed-avatar feed-avatar-empresa">IN</div>
+                    <div>
+                        <h3 class="feed-name">Empresa Parceira · InclusiON</h3>
+                        <p class="feed-role">Vaga de Assistente Administrativo · 3d</p>
+                    </div>
+                </header>
+                <p class="feed-text">
+                    Estamos com vaga para <strong>Assistente Administrativo</strong> em São Paulo.
+                    Ambiente inclusivo, suporte para adaptação cultural e linguagem simples no dia a dia.
+                </p>
+                <ul class="feed-tags">
+                    <li>Vaga formal</li>
+                    <li>CLT</li>
+                    <li>Treinamento em português</li>
+                </ul>
+                <button class="post-button">Ver detalhes da vaga</button>
+            </article>
+            <article class="feed-post">
+                <header class="feed-header">
+                    <div class="feed-avatar feed-avatar-curso">PT</div>
+                    <div>
+                        <h3 class="feed-name">Curso de Português - InclusiON</h3>
+                        <p class="feed-role">Turmas iniciantes e intermediárias · 5d</p>
+                    </div>
+                </header>
+                <p class="feed-text">
+                    Novas turmas de <strong>português para refugiados</strong> iniciando em breve.
+                    Aulas focadas em vocabulário para trabalho, entrevistas e rotina no Brasil.
+                </p>
+                <button class="post-button">Ver cursos disponíveis</button>
+            </article>
+        </section>
+        <aside class="right-column">
+            <section class="news-card">
+                <h3 class="news-title">InclusiON Notícias</h3>
+                <ul class="news-list">
+                    <li>
+                        <h4>Programa de inclusão em tecnologia</h4>
+                        <p>Nova parceria conecta refugiados a vagas de tecnologia em empresas brasileiras.</p>
+                    </li>
+                    <li>
+                        <h4>Guia atualizado de validação de diploma</h4>
+                        <p>Passo a passo simplificado para reconhecer sua formação no Brasil.</p>
+                    </li>
+                    <li>
+                        <h4>Feira de empregos para refugiados</h4>
+                        <p>Evento online com empresas parceiras do InclusiON.</p>
+                    </li>
+                </ul>
+                <button class="news-link">Exibir mais notícias</button>
+            </section>
+            <section class="promo-card">
+                <p class="promo-title">Precisa de ajuda?</p>
+                <p class="promo-text">
+                    Fale com a equipe InclusiON e tire dúvidas sobre idioma, documentos e vagas.
+                </p>
+                <button class="post-button">Falar com suporte</button>
+            </section>
+        </aside>
+    </main>
 </body>
 </html>
