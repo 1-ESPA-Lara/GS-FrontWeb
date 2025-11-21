@@ -1,12 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="pt-br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InclusiON</title>
+    <title>InclusiON – Conectando refugiados ao futuro</title>
+
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <script src="./src/js/script.js"></script>
+    <header>
+        <div class="menu">
+            <a href="./index.html">
+                <img src="./src/assets/logo.jpg" alt="Logo InclusiON" class="logo">
+            </a>
+            <nav>
+                <a href="./src/pages/home.html" class="menu-item" data-page="home">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="./src/pages/perfil.html" class="menu-item" data-page="rede">
+                    <i data-lucide="users"></i>
+                    <span>Minha Rede</span>
+                </a>
+                <a href="./src/pages/quiz.html" class="menu-item" data-page="quiz">
+                    <i data-lucide="help-circle"></i>
+                    <span>Quiz</span>
+                </a>
+                <a href="./src/pages/home.html" class="menu-item" data-page="eu">
+                    <i data-lucide="user"></i>
+                    <span>Eu</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        lucide.createIcons();
+    </script>
+    <main class="inclusion-main">
+        <section class="home-hero container">
+            <div class="home-hero-left">
+                <div class="card card-main">
+                    <span class="pill-label">plataforma inclusion</span>
+                    <h1>Bem-vindo(a) ao InclusiON</h1>
+                    <p>
+                        O InclusiON é uma plataforma criada para apoiar refugiados e migrantes que chegam ao Brasil
+                        com histórias, habilidades e diplomas — mas encontram barreiras para entrar no mercado de trabalho.
+                        Aqui, eles encontram apoio para aprender português, validar sua formação e se conectar com vagas formais.
+                    </p>
+                </div>
+                <div class="home-feature-grid">
+                    <div class="card feature-card">
+                        <span class="feature-icon">🤝</span>
+                        <h3>Inclusão</h3>
+                        <p>Acolhimento real e humano, com foco em respeito e dignidade.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <span class="feature-icon">📚</span>
+                        <h3>Idioma</h3>
+                        <p>Quiz de português e trilhas personalizadas para cada nível.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <span class="feature-icon">💼</span>
+                        <h3>Trabalho</h3>
+                        <p>Conexão direta com empresas comprometidas com diversidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card login-card">
+                <h2>Entrar no InclusiON</h2>
+                <p class="login-sub">
+                    Acesso rápido – simulado apenas para apresentação do fluxo.
+                </p>
+                <form id="login-form">
+                    <label for="login-email">E-mail</label>
+                    <input id="login-email" type="email" placeholder="seuemail@email.com" required>
+                    <label for="login-senha">Senha</label>
+                    <input id="login-senha" type="password" placeholder="••••••••" required>
+                    <label for="login-tipo">Você é:</label>
+                    <select id="login-tipo">
+                        <option>Refugiado / Migrante</option>
+                        <option>Empresa parceira</option>
+                    </select>
+                    <button type="submit" class="btn-primary btn-full">Entrar (simulado)</button>
+                </form>
+                <p class="login-obs">
+                    *Na versão real, esse acesso levaria ao painel da plataforma com vagas, trilhas e suporte.
+                </p>
+                <p id="login-feedback" class="login-feedback"></p>
+            </div>
+        </section>
+        <section class="home-section container">
+            <h2>Como o InclusiON te ajuda</h2>
+            <p class="section-intro">
+                Passo a passo para transformar sua chegada em um recomeço com propósito.
+            </p>
+            <div class="home-info-grid">
+                <div class="card info-card">
+                    <h3>Português na prática</h3>
+                    <p>
+                        Comece com um quiz de português para entender seu nível e, a partir disso,
+                        acessar aulas personalizadas e conteúdos focados no dia a dia no Brasil.
+                    </p>
+                </div>
+                <div class="card info-card">
+                    <h3>Validação de diploma</h3>
+                    <p>
+                        Receba orientação sobre como validar seu diploma, quais documentos reunir e como acompanhar o processo
+                        com mais segurança.
+                    </p>
+                </div>
+                <div class="card info-card">
+                    <h3>Conexão com o trabalho</h3>
+                    <p>
+                        Encontre vagas de trabalho alinhadas à sua formação, experiência e cidade, aproximando você de empresas
+                        que valorizam diversidade e inclusão.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="home-section home-section-alt">
+            <div class="container">
+                <h2>Sua jornada dentro do InclusiON</h2>
+                <p class="section-intro">
+                    Do primeiro acesso até a conquista da vaga.
+                </p>
+                <div class="steps-grid">
+                    <div class="card step-card">
+                        <span class="step-number">1</span>
+                        <h3>Cadastro</h3>
+                        <p>Criação do perfil com dados básicos, idioma, área de formação e interesses.</p>
+                    </div>
+                    <div class="card step-card">
+                        <span class="step-number">2</span>
+                        <h3>Quiz & idioma</h3>
+                        <p>Teste de português e acesso a trilhas de estudo organizadas por nível.</p>
+                    </div>
+                    <div class="card step-card">
+                        <span class="step-number">3</span>
+                        <h3>Documentos</h3>
+                        <p>Orientação sobre documentação e caminhos possíveis para validar o diploma.</p>
+                    </div>
+                    <div class="card step-card">
+                        <span class="step-number">4</span>
+                        <h3>Vagas & empresas</h3>
+                        <p>Recomendações de vagas e contato com empresas parceiras preparadas para acolher.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Pronto para começar sua jornada?</h2>
+                    <p>O InclusiON está aqui para caminhar com você nesse novo capítulo.</p>
+                    <a href="./src/pages/home.html" class="btn-primary">Acessar home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-inclusion">
+        <p>© 2025 InclusiON — Projeto acadêmico FIAP • Global Solution.</p>
+    </footer>
+    <script>
+        const form = document.getElementById("login-form");
+        const feedback = document.getElementById("login-feedback");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = document.getElementById("login-email").value;
+            const tipo = document.getElementById("login-tipo").value;
+
+            feedback.textContent = Login simulado para ${email} como "${tipo}". Na versão real, você seria redirecionado(a) para o painel.;
+            feedback.classList.add("show");
+        });
+    </script>
 </body>
 </html>
