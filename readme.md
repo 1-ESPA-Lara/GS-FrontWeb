@@ -36,14 +36,21 @@ Criar uma plataforma web interativa utilizando **HTML, CSS e JavaScript**, com f
 
 ## Estrutura do Projeto
 
+```
 /
 ├── index.html
 ├── equipe.txt
 ├── src/
-│ ├── assets/ → imagens utilizadas no site
-│ ├── css/ → estilos (style.css)
-│ ├── js/ → funcionalidades (script.js, quiz.js)
-│ └── pages/ → páginas adicionais (história.html, produtos.html, quiz.html, tecnologia.html, contato.html)
+│   ├── assets/        → imagens utilizadas no site
+│   ├── css/           → estilos (style.css)
+│   ├── js/            → funcionalidades (script.js, quiz.js)
+│   └── pages/         → páginas adicionais
+│        ├── home.html
+│        ├── perfil.html
+│        ├── quiz.html
+│        ├── tecnologia.html
+│        └── contato.html
+```
 
 ## Tecnologias Utilizadas
 
