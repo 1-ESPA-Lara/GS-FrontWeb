@@ -9,6 +9,11 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="welcome-icon">🤝</div>
+        <h1 class="welcome-text">Conheça InclusiON</h1>
+        <p class="welcome-subtitle">Conectando refugiados ao futuro</p>
+    </div>
     <header>
         <div class="menu">
             <a href="./index.html">
@@ -34,15 +39,13 @@
             </nav>
         </div>
     </header>
-    <script>
-        lucide.createIcons();
-    </script>
+
     <main class="inclusion-main">
         <section class="home-hero container">
             <div class="home-hero-left">
                 <div class="card card-main">
                     <span class="pill-label">plataforma inclusion</span>
-                    <h1>Bem-vindo(a) ao InclusiON</h1>
+                    <h2>Bem-vindo(a) ao InclusiON</h2>
                     <p>
                         O InclusiON é uma plataforma criada para apoiar refugiados e migrantes que chegam ao Brasil
                         com histórias, habilidades e diplomas — mas encontram barreiras para entrar no mercado de trabalho.
@@ -171,9 +174,11 @@
             const email = document.getElementById("login-email").value;
             const tipo = document.getElementById("login-tipo").value;
 
-            feedback.textContent = Login simulado para ${email} como "${tipo}". Na versão real, você seria redirecionado(a) para o painel.;
-            feedback.classList.add("show");
+            feedback.textContent = `Login simulado para ${email} como "${tipo}". Na versão real, você seria redirecionado(a) para o painel.`;
+            feedback.classList.add("show");  
         });
+
+        lucide.createIcons();
     </script>
 </body>
 </html>
