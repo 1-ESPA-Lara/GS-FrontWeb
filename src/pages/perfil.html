@@ -1,42 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="pt-br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Rede</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-   <header>
+
+  <header>
     <div class="menu">
       <a href="../../index.html">
         <img src="../assets/logo.jpg" alt="Logo" class="logo">
       </a>
+
       <nav>
         <a href="./home.html" class="menu-item" data-page="home">
-          <i data-lucide="home"></i>
-          <span>Home</span>
+          <i data-lucide="home"></i><span>Home</span>
         </a>
+
         <a href="./perfil.html" class="menu-item ativo" data-page="rede">
-          <i data-lucide="users"></i>
-          <span>Minha Rede</span>
+          <i data-lucide="users"></i><span>Minha Rede</span>
         </a>
+
         <a href="./quiz.html" class="menu-item" data-page="quiz">
-          <i data-lucide="help-circle"></i>
-          <span>Quiz</span>
+          <i data-lucide="help-circle"></i><span>Quiz</span>
         </a>
+
         <a href="./home.html" class="menu-item" data-page="eu">
-          <i data-lucide="user"></i>
-          <span>Eu</span>
+          <i data-lucide="user"></i><span>Eu</span>
         </a>
       </nav>
     </div>
   </header>
 
+   <main>
+    <section class="slideshow" aria-label="Perfis de profissionais">
+      <article class="card-slideshow" id="card">
+        <figure class="foto">
+          <img id="foto" src="" alt="Foto do profissional">
+        </figure>
+        <header class="card-header">
+          <h2 id="nome"></h2>
+          <p id="profissao"></p>
+        </header>
+        <div class="card-conteudo">
+          <p class="info-tag">
+            <i data-lucide="map-pin"></i>
+            <span id="cidade"></span>
+          </p>
+          <p class="info-tag">
+            <i data-lucide="flag"></i>
+            <strong>Nacionalidade:</strong>
+            <span id="nacionalidade"></span>
+          </p>
+          <p>
+            <strong><i data-lucide="briefcase"></i> Habilidades:</strong><br>
+            <span id="habilidades"></span>
+          </p>
+          <p>
+            <strong><i data-lucide="file-text"></i> Sobre:</strong><br>
+            <span id="resumo"></span>
+          </p>
+        </div>
+        <footer class="card-footer">
+          <button class="btn conectar-btn">
+            <i data-lucide="user-plus"></i>
+            Conectar
+          </button>
+          <button class="btn navegacao-btn">
+            <i data-lucide="message-circle"></i>
+            Mensagem
+          </button>
+        </footer>
+      </article>
+
+      <div class="controles">
+        <div class="indicadores" id="indicadores"></div>
+      </div>
+    </section>
+  </main>
+
   <script>
     lucide.createIcons();
   </script>
-    <script src="../js/script.js"></script>
+  <script src="../js/script.js"></script>
+
 </body>
 </html>
