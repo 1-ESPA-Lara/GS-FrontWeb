@@ -16,9 +16,9 @@ https://1-espa-lara.github.io/GS-FrontWeb/
 
 | Nome | RM |
 |------|------|
-| Lara Mofid Essa Alssabak | RM567947 |
-| Maria Luisa Boucinhas Franco | RM567355 |
-| Roberta Moreira dos Santos | RM567825 |
+| Lara Mofid Essa Alssabak | 567947 |
+| Maria Luisa Boucinhas Franco | 567355 |
+| Roberta Moreira dos Santos | 567825 |
 
 ---
 
